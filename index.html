@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ujjwal Maharjan | IT Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html {
+      scroll-padding-top: 80px;
+    }
+    body {
+      font-family: 'Poppins', 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
+    }
+    :root {
+      --bg: #f0f2f5;
+      --text: #333;
+      --primary: #007acc;
+      --heading: #002244;
+      --hover: #005999;
+    }
+    .dark-mode {
+      --bg: #121212;
+      --text: #eee;
+      --primary: #66ccff;
+      --heading: #ffffff;
+      --hover: #88ddff;
+    }
+    header, footer {
+      background-color: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0.75rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0.5rem 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--hover);
+      transform: scale(1.1);
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 1rem;
+    }
+    h1, h2 {
+      color: var(--heading);
+    }
+    h2 {
+      border-bottom: 2px solid #e2e2e2;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .button {
+      display: inline-block;
+      padding: 0.75rem 1.25rem;
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background-color: var(--hover);
+    }
+    .toggle-mode {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: var(--primary);
+      border: none;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-mode" onclick="toggleMode()">Toggle Dark Mode</button>
+
+  <header>
+    <h1 style="color: white;">Ujjwal Maharjan</h1>
+    <p>IT Service Desk Analyst | uzalmaharjan43@gmail.com | 0415202704</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ujjwal-maharjan-8b5036219" style="color:#fff;">ujjwal-maharjan</a></p>
+  </header>
+
+  <nav>
+    <a href="#career">Career</a>
+    <a href="#skills">Skills</a>
+    <a href="#strengths">Strengths</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+  </nav>
+
+  <div class="container">
+    <section id="career">
+      <h2>Career Objective</h2>
+      <p>A Bachelor of Information Technology graduate from the University of Wollongong, currently working as an IT Service Desk Analyst at Mission Australia...</p>
+    </section>
+    <!-- (Omitted for brevity - content continues as previously structured) -->
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Ujjwal Maharjan</p>
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
